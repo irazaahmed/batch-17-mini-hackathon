@@ -1,11 +1,133 @@
-/* Responsive Styles */
-
+/* Tablets (768px and below) */
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
+  .uper-nav-link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px
   }
 
-  header {
-    padding: 1rem;
+  #menu-toggle:checked+.menu-icon+.nav-links {
+    display: flex;
+    color: black;
   }
+
+  label i {
+    color: black;
+  }
+
+  .uper-nav-link ul {
+    /* flex-wrap: wrap; */
+    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 11px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .lower-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .logo img {
+    width: 120px;
+    margin: 10px 0;
+  }
+
+  .search-bar input {
+    width: 90%;
+    margin: 10px 0;
+    height: 40px;
+  }
+
+  .search-icon {
+    position: static;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .cart {
+    margin: 10px 0;
+  }
+
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header-left,
+  .header-right {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+  }
+
+  .header-left img,
+  .header-right img {
+    height: auto;
+  }
+    .categories-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      }
+
+      .category-card img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .category-card p {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .flash-sale-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .uper-nav-link ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .search-icon {
+    margin-top: 10px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .cart {
+    font-size: 20px;
+  }
+     .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
 }
